@@ -7,7 +7,7 @@ class Intro extends Component {
     return (
       <div
         id="home"
-        className="route bg-image" className={classes.intro}
+        className="route" className={classes.intro}
         // style="background-image: url(assets/img/intro-bg.jpg)"
         style={{backgroundImage: `url(${backgroundImage})`}}
       >
