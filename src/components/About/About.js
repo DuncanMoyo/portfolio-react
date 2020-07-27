@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import classes from './About.module.css'
+import profilePicture from '../../img/testimonial-2.jpg';
 
 class About extends Component {
   render() {
@@ -15,7 +16,7 @@ class About extends Component {
                       <div className="col-sm-6 col-md-5">
                         <div className={classes.aboutImg}>
                           <img
-                            src="assets/img/testimonial-2.jpg"
+                            src={profilePicture}
                             className="img-fluid rounded b-shadow-a"
                             alt=""
                           />
