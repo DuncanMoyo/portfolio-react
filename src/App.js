@@ -6,6 +6,7 @@ import Intro from './components/Intro/Intro';
 import WorkDone from './components/WorkDone/WorkDone';
 import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
+import ContactData from './components/ContactData/ContactData';
 
 function App() {
   return (
