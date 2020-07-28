@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import About from './components/About/About'
-import Navbar from './components/Navbar/Navbar';
-import Intro from './components/Intro/Intro';
-import WorkDone from './components/WorkDone/WorkDone';
-import Footer from './components/Footer/Footer';
-import Contact from './components/Contact/Contact';
-import ContactData from './components/ContactData/ContactData';
+import About from './components/About/Index'
+import Navbar from './components/Navbar/Index';
+import Intro from './components/Intro/Index';
+import WorkDone from './components/WorkDone/Index';
+import Footer from './components/Footer/Index';
+import Contact from './components/Contact/Index';
+
 
 function App() {
   return (

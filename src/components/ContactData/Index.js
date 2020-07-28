@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import classes from './ContactData.module.css';
-import Button from '../Button/Button';
-import Input from '../Input/Input';
-import Spinner from '../Spinner/Spinner'
+import Button from '../Button/Index';
+import Input from '../Input/Index';
+import Spinner from '../Spinner/Index'
 import axios from 'axios';
 
 class ContactData extends Component {

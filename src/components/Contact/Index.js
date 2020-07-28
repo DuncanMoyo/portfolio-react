@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import footerImage from '../../img/overlay-bg.jpg';
 import classes from './Contact.module.css'
-import ContactData from "../ContactData/ContactData";
+import ContactData from "../ContactData/Index";
 import portfolioData from "../PortfolioData";
 
 class Contact extends Component {
