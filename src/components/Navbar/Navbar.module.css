@@ -1,34 +1,37 @@
 
-.navbarB {
+/*--------------------------------------------------------------
+# Nav Bar
+--------------------------------------------------------------*/
+.navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
 }
 
-.navbarB.navbar-reduce {
+.navbar-b.navbar-reduce {
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
-.navbarB.navbarTrans .navItem, .navbarB.navbar-reduce .navItem {
+.navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
   position: relative;
   padding-right: 10px;
   padding-left: 0;
 }
 
 @media (min-width: 768px) {
-  .navbarB.navbarTrans .navItem, .navbarB.navbar-reduce .navItem {
+  .navbar-b.navbar-trans .nav-item, .navbar-b.navbar-reduce .nav-item {
     padding-left: 10px;
   }
 }
 
-.navbarB.navbarTrans .navLink, .navbarB.navbar-reduce .navLink {
+.navbar-b.navbar-trans .nav-link, .navbar-b.navbar-reduce .nav-link {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.navbarB.navbarTrans .navLink:before, .navbarB.navbar-reduce .navLink:before {
+.navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {
   content: '';
   position: absolute;
   margin-left: 0px;
@@ -40,122 +43,122 @@
 }
 
 @media (min-width: 768px) {
-  .navbarB.navbarTrans .navLink:before, .navbarB.navbar-reduce .navLink:before {
+  .navbar-b.navbar-trans .nav-link:before, .navbar-b.navbar-reduce .nav-link:before {
     margin-left: 18px;
   }
 }
 
-.navbarB.navbarTrans .navLink:hover, .navbarB.navbar-reduce .navLink:hover {
+.navbar-b.navbar-trans .nav-link:hover, .navbar-b.navbar-reduce .nav-link:hover {
   color: #1B1B1B;
 }
 
-.navbarB.navbarTrans .navLink:hover:before, .navbarB.navbar-reduce .navLink:hover:before {
+.navbar-b.navbar-trans .nav-link:hover:before, .navbar-b.navbar-reduce .nav-link:hover:before {
   width: 35px;
 }
 
-.navbarB.navbarTrans .show > .navLink:before,
-.navbarB.navbarTrans .active > .navLink:before,
-.navbarB.navbarTrans .navLink.show:before,
-.navbarB.navbarTrans .navLink.active:before, .navbarB.navbar-reduce .show > .navLink:before,
-.navbarB.navbar-reduce .active > .navLink:before,
-.navbarB.navbar-reduce .navLink.show:before,
-.navbarB.navbar-reduce .navLink.active:before {
+.navbar-b.navbar-trans .show > .nav-link:before,
+.navbar-b.navbar-trans .active > .nav-link:before,
+.navbar-b.navbar-trans .nav-link.show:before,
+.navbar-b.navbar-trans .nav-link.active:before, .navbar-b.navbar-reduce .show > .nav-link:before,
+.navbar-b.navbar-reduce .active > .nav-link:before,
+.navbar-b.navbar-reduce .nav-link.show:before,
+.navbar-b.navbar-reduce .nav-link.active:before {
   width: 35px;
 }
 
-.navbarB.navbarTrans .navLink:before {
+.navbar-b.navbar-trans .nav-link:before {
   background-color: #fff;
 }
 
-.navbarB.navbarTrans .navLink:hover {
+.navbar-b.navbar-trans .nav-link:hover {
   color: #fff;
 }
 
-.navbarB.navbarTrans .show > .navLink,
-.navbarB.navbarTrans .active > .navLink,
-.navbarB.navbarTrans .navLink.show,
-.navbarB.navbarTrans .navLink.active {
+.navbar-b.navbar-trans .show > .nav-link,
+.navbar-b.navbar-trans .active > .nav-link,
+.navbar-b.navbar-trans .nav-link.show,
+.navbar-b.navbar-trans .nav-link.active {
   color: #fff;
 }
 
-.navbarB.navbar-reduce {
+.navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
   background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.navbarB.navbar-reduce .navLink {
+.navbar-b.navbar-reduce .nav-link {
   color: #0078ff;
 }
 
-.navbarB.navbar-reduce .navLink:before {
+.navbar-b.navbar-reduce .nav-link:before {
   background-color: #0078ff;
 }
 
-.navbarB.navbar-reduce .navLink:hover {
+.navbar-b.navbar-reduce .nav-link:hover {
   color: #0078ff;
 }
 
-.navbarB.navbar-reduce .show > .navLink,
-.navbarB.navbar-reduce .active > .navLink,
-.navbarB.navbar-reduce .navLink.show,
-.navbarB.navbar-reduce .navLink.active {
+.navbar-b.navbar-reduce .show > .nav-link,
+.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .nav-link.show,
+.navbar-b.navbar-reduce .nav-link.active {
   color: #0078ff;
 }
 
-.navbarB.navbar-reduce .navbarBrand {
+.navbar-b.navbar-reduce .navbar-brand {
   color: #0078ff;
 }
 
-.navbarB.navbar-reduce .navbarToggler span {
+.navbar-b.navbar-reduce .navbar-toggler span {
   background-color: #1B1B1B;
 }
 
-.navbarB .navbarBrand {
+.navbar-b .navbar-brand {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
 }
 
-.navbarB .navbarNav .dropdown-item.show .dropdown-menu,
-.navbarB .dropdown.show .dropdown-menu,
-.navbarB .dropdown-btn.show .dropdown-menu {
+.navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
+.navbar-b .dropdown.show .dropdown-menu,
+.navbar-b .dropdown-btn.show .dropdown-menu {
   transform: translate3d(0px, 0px, 0px);
   visibility: visible !important;
 }
 
-.navbarB .dropdown-menu {
+.navbar-b .dropdown-menu {
   margin: 1.12rem 0 0;
   border-radius: 0;
 }
 
-.navbarB .dropdown-menu .dropdown-item {
+.navbar-b .dropdown-menu .dropdown-item {
   padding: .7rem 1.7rem;
   transition: all 500ms ease;
 }
 
-.navbarB .dropdown-menu .dropdown-item:hover {
+.navbar-b .dropdown-menu .dropdown-item:hover {
   background-color: #0078ff;
   color: #fff;
   transition: all 500ms ease;
 }
 
-.navbarB .dropdown-menu .dropdown-item.active {
+.navbar-b .dropdown-menu .dropdown-item.active {
   background-color: #0078ff;
 }
 
 /*--/ Hamburger Navbar /--*/
-.navbarToggler {
+.navbar-toggler {
   position: relative;
 }
 
-.navbarToggler:focus,
-.navbarToggler:active {
+.navbar-toggler:focus,
+.navbar-toggler:active {
   outline: 0;
 }
 
-.navbarToggler span {
+.navbar-toggler span {
   display: block;
   background-color: #fff;
   height: 3px;
@@ -167,12 +170,12 @@
   opacity: 1;
 }
 
-.navbarToggler span:nth-child(1),
-.navbarToggler span:nth-child(3) {
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
   transition: transform .35s ease-in-out;
 }
 
-.navbarToggler:not(.collapsed) span:nth-child(1) {
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: absolute;
   left: 12px;
   top: 10px;
@@ -180,13 +183,13 @@
   opacity: 0.9;
 }
 
-.navbarToggler:not(.collapsed) span:nth-child(2) {
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
   height: 12px;
   visibility: hidden;
   background-color: transparent;
 }
 
-.navbarToggler:not(.collapsed) span:nth-child(3) {
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: absolute;
   left: 12px;
   top: 10px;

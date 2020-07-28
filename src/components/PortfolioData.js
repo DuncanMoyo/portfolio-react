@@ -2,6 +2,8 @@ const portfolioData = {
   name: "Duncan Moyo",
   role: "Frontend Developer",
   email: "duncanfmoyo@gmail.com",
+  address: '46 Riebeek Street, Goodwood, Cape Town',
+  getInTouch: 'Hit me up, let\'s build',
   phoneNumber: "+27 67 073 7874",
   roleDescription:
     "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",

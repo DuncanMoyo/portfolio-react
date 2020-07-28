@@ -71,83 +71,6 @@
   }
 }
 
-.php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.php-email-form input, .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.php-email-form input::focus, .php-email-form textarea::focus {
-  background-color: #0078ff;
-}
-
-.php-email-form input {
-  padding: 20px 15px;
-}
-
-.php-email-form textarea {
-  padding: 12px 15px;
-  margin-bottom: 0;
-}
-
-.php-email-form button[type="submit"] {
-  background: #0078ff;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-}
-
-.php-email-form button[type="submit"]:hover {
-  background: #3393ff;
-}
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -173,4 +96,62 @@
 .titleLeft {
   font-size: 2rem;
   position: relative;
+}
+
+
+/*------/ Ul resect /------*/
+.ul-resect, .socials ul, .listIco, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.listIco {
+  line-height: 2;
+}
+
+.listIco span {
+  color: #0078ff;
+  margin-right: 10px;
+}
+
+/*------/ Ico Circle /------*/
+.icoCircle {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  display: block;
+}
+
+
+/*------/ Socials /------*/
+.socials {
+  padding: 1.5rem 0;
+}
+
+.socials ul li {
+  display: inline-block;
+}
+
+.socials .icoCircle {
+  height: 40px;
+  width: 40px;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  line-height: 1.4;
+  margin: 0 15px 0 0;
+  box-shadow: 0 0 0 3px #0078ff;
+  transition: all 500ms ease;
+}
+
+.socials .icoCircle:hover {
+  background-color: #0078ff;
+  color: #fff;
+  box-shadow: 0 0 0 3px #cde1f8;
+  transition: all 500ms ease;
 }
