@@ -5,6 +5,9 @@ import portfolioData from "../PortfolioData";
 
 class About extends Component {
   render() {
+
+    const {name, aboutMe, email, phoneNumber, skills, role} = portfolioData;
+
     return (
       <section
         id="about"
@@ -31,19 +34,19 @@ class About extends Component {
                         <div className="about-info">
                           <p>
                             <span className={classes.titleS}>Name: </span>{" "}
-                            <span>{portfolioData.name}</span>
+                            <span>{name}</span>
                           </p>
                           <p>
                             <span className={classes.titleS}>Profile: </span>{" "}
-                            <span>{portfolioData.role}</span>
+                            <span>{role}</span>
                           </p>
                           <p>
                             <span className={classes.titleS}>Email: </span>{" "}
-                            <span>{portfolioData.email}</span>
+                            <span>{email}</span>
                           </p>
                           <p>
                             <span className={classes.titleS}>Phone: </span>{" "}
-                            <span>{portfolioData.phoneNumber}</span>
+                            <span>{phoneNumber}</span>
                           </p>
                         </div>
                       </div>
@@ -51,7 +54,7 @@ class About extends Component {
                     <hr />
                     <div className={classes.skillMf}>
                       <p className={classes.titleS}>Skill</p>
-                      {portfolioData.skills.map((skill) => {
+                      {skills.map((skill) => {
                         return (
                           <div>
                             <span>
@@ -76,13 +79,14 @@ class About extends Component {
                       })}
                     </div>
                   </div>
+                  <hr />
                   <div className="col-md-6">
                     <div className="about-me pt-4 pt-md-0">
                       <div className={classes.titleBox2}>
                         <h5 className={classes.titleLeft}>About me</h5>
                       </div>
                       <p className="lead">
-                          {portfolioData.aboutMe}
+                          {aboutMe}
                       </p>
                     </div>
                   </div>

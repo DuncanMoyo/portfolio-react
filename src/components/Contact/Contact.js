@@ -18,8 +18,8 @@ class Contact extends Component {
                 <div id="contact" className="box-shadow-full" >
                   <div className="row">
                     <div className="col-md-6">
-                      <div className="title-box-2">
-                        <h5 className="title-left">Send Message Us</h5>
+                      <div className={classes.titleBox2}>
+                        <h5 className={classes.titleLeft}>Send Message Us</h5>
                       </div>
                       <div>
                         <form
