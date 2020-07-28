@@ -118,7 +118,7 @@
   font-weight: 600;
 }
 
-.navbarB .navbar-nav .dropdown-item.show .dropdown-menu,
+.navbarB .navbarNav .dropdown-item.show .dropdown-menu,
 .navbarB .dropdown.show .dropdown-menu,
 .navbarB .dropdown-btn.show .dropdown-menu {
   transform: translate3d(0px, 0px, 0px);

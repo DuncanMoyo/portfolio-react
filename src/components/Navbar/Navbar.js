@@ -11,21 +11,8 @@ class Navbar extends Component {
         >
           <div className="container">
             <a className="navbar-brand js-scroll" href="#page-top">
-              DevFolio
+              My Portfolio
             </a>
-            <button
-              className="collapsed" className={classes.navbarToggler}
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarDefault"
-              aria-controls="navbarDefault"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
             <div
               className="navbar-collapse collapse justify-content-end"
               id="navbarDefault"
