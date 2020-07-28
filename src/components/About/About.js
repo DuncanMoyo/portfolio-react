@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import classes from './About.module.css'
-import profilePicture from '../../img/testimonial-2.jpg';
+import classes from "./About.module.css";
+import profilePicture from "../../img/profile.jpg";
+import portfolioData from "../PortfolioData";
 
 class About extends Component {
   render() {
     return (
-      <section id="about" className='route' className={classes.aboutMf, classes.sectPt4}>
+      <section
+        id="about"
+        className="route"
+        className={(classes.aboutMf, classes.sectPt4)}
+      >
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -26,70 +31,49 @@ class About extends Component {
                         <div className="about-info">
                           <p>
                             <span className={classes.titleS}>Name: </span>{" "}
-                            <span>Morgan Freeman</span>
+                            <span>{portfolioData.name}</span>
                           </p>
                           <p>
                             <span className={classes.titleS}>Profile: </span>{" "}
-                            <span>full stack developer</span>
+                            <span>{portfolioData.role}</span>
                           </p>
                           <p>
                             <span className={classes.titleS}>Email: </span>{" "}
-                            <span>contact@example.com</span>
+                            <span>{portfolioData.email}</span>
                           </p>
                           <p>
                             <span className={classes.titleS}>Phone: </span>{" "}
-                            <span>(617) 557-0089</span>
+                            <span>{portfolioData.phoneNumber}</span>
                           </p>
                         </div>
                       </div>
                     </div>
+                    <hr />
                     <div className={classes.skillMf}>
                       <p className={classes.titleS}>Skill</p>
-                      <span>HTML</span> <span className="pull-right">85%</span>
-                      <div className={classes.progress}>
-                        <div
-                          className={classes.progressBar}
-                          role="progressbar"
-                          
-                          aria-valuenow="85"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                      <span>CSS3</span> <span className="pull-right">75%</span>
-                      <div className={classes.progress}>
-                        <div
-                          className={classes.progressBar}
-                          role="progressbar"
-                          
-                          aria-valuenow="75"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                      <span>PHP</span> <span className="pull-right">50%</span>
-                      <div className={classes.progress}>
-                        <div
-                          className={classes.progressBar}
-                          role="progressbar"
-                          
-                          aria-valuenow="50"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                      <span>JAVASCRIPT</span>{" "}
-                      <span className="pull-right">90%</span>
-                      <div className={classes.progress}>
-                        <div
-                          className={classes.progressBar}
-                          role="progressbar"
-                         
-                          aria-valuenow="90"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
+                      {portfolioData.skills.map((skill) => {
+                        return (
+                          <div>
+                            <span>
+                              <strong>{skill.skillName}</strong>
+                            </span>{" "}
+                            <strong>
+                              <span style={{ float: "right" }}>
+                                {skill.skillLevel}%
+                              </span>
+                            </strong>
+                            <div className={classes.progress}>
+                              <div
+                                className={classes.progressBar}
+                                role="progressbar"
+                                style={{
+                                  width: `${skill.skillLevel}%`,
+                                }}
+                              ></div>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -98,27 +82,11 @@ class About extends Component {
                         <h5 className={classes.titleLeft}>About me</h5>
                       </div>
                       <p className="lead">
-                        Curabitur non nulla sit amet nisl tempus convallis quis
-                        ac lectus. Curabitur arcu erat, accumsan id imperdiet
-                        et, porttitor at sem. Praesent sapien massa, convallis a
-                        pellentesque nec, egestas non nisi. Nulla porttitor
-                        accumsan tincidunt.
-                      </p>
-                      <p className="lead">
-                        Mauris blandit aliquet elit, eget tincidunt nibh
-                        pulvinar a. Vivamus suscipit tortor eget felis porttitor
-                        volutpat. Vestibulum ac diam sit amet quam vehicula
-                        elementum sed sit amet dui. porttitor at sem.
-                      </p>
-                      <p className="lead">
-                        Nulla porttitor accumsan tincidunt. Quisque velit nisi,
-                        pretium ut lacinia in, elementum id enim. Nulla
-                        porttitor accumsan tincidunt. Mauris blandit aliquet
-                        elit, eget tincidunt nibh pulvinar a.
+                          {portfolioData.aboutMe}
                       </p>
                     </div>
                   </div>
-                </div>
+                 </div>
               </div>
             </div>
           </div>
