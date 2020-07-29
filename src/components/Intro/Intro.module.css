@@ -32,7 +32,7 @@
 
 .intro .introTitle {
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3rem;
 }
 
@@ -53,7 +53,7 @@
   }
 }
 
-.intro .textSliderItems {
+.intro .text-slider-items {
   display: none;
 }
 
