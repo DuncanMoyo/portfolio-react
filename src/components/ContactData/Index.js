@@ -34,23 +34,10 @@ class ContactData extends Component {
         valid: false,
         touched: false,
       },
-      subject: {
+      message: {
         elementType: "input",
         elementConfig: {
-          type: "text",
-          placeholder: "Subject",
-        },
-        value: "",
-        validation: {
-          required: true,
-        },
-        valid: false,
-        touched: false,
-      },
-      subject: {
-        elementType: "input",
-        elementConfig: {
-          type: "textarea",
+          type: "textfield",
           placeholder: "Message",
         },
         value: "",
@@ -168,7 +155,7 @@ class ContactData extends Component {
       form = <Spinner />;
     }
     return (
-      <div>
+      <div className={classes.ContactData}>
         <h4>Contact Me</h4>
         {form}
       </div>

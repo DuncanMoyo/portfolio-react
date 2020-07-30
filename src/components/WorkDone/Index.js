@@ -24,7 +24,7 @@ const WorkDone = () => {
               <div className="col-md-4">
                 <div className="work-box">
                   <a
-                    href="assets/img/work-1.jpg"
+                    href={Item.gitHubUrl}
                     data-gall="portfolioGallery"
                     className="venobox"
                   >

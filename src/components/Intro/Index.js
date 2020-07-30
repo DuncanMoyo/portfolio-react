@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import backgroundImage from "../../img/table.jpg";
 import "../../css/style.css";
 import portfolioData from "../PortfolioData";
