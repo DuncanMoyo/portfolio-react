@@ -438,7 +438,7 @@ a:hover {
 --------------------------------------------------------------*/
 .navbar-b {
   transition: all .5s ease-in-out;
-  background-color: transparent;
+  background-color: rgb(184, 179, 179);
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
 }
@@ -505,14 +505,14 @@ a:hover {
 }
 
 .navbar-b.navbar-trans .nav-link:hover {
-  color: #fff;
+  color: #0078ff;
 }
 
 .navbar-b.navbar-trans .show > .nav-link,
 .navbar-b.navbar-trans .active > .nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .navbar-b.navbar-reduce {
