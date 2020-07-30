@@ -1,8 +1,12 @@
+import BurgerProfile from '../img/burger-project.jpg';
+import BudgetProject from '../img/budget-project.jpg';
+import ObajuProject from '../img/obaju-project.jpg';
+
 const portfolioData = {
   name: "Duncan Moyo",
   role: "Frontend Developer",
   email: "duncanfmoyo@gmail.com",
-  address: '46 Riebeek Street, Goodwood, Cape Town',
+  address: 'Goodwood, Cape Town',
   getInTouch: 'Hit me up, let\'s build',
   phoneNumber: "+27 67 073 7874",
   roleDescription:
@@ -47,19 +51,25 @@ const portfolioData = {
   portfolioItems: [
     {
       name: "Burger Builder",
-      AppLanguage: 'React',
-      image: "jpg file1",
+      description: 'React',
+      image: BurgerProfile,
+      gitHubUrl: 'https://github.com/DuncanMoyo/burger-builder',
     },
     {
-      name: "Porfolio Website",
-      description: "React",
-      image: "jpg file2",
-
+      name: "E-commerce Website",
+      description: "Python",
+      image: ObajuProject,
+      gitHubUrl: 'https://github.com/DuncanMoyo/ecommerce-boilerplate',
+    },
+    {
       name: "Budget Calculator",
       description: "React",
-      image: "jpg file3",
+      image: BudgetProject,
+      gitHubUrl: 'https://github.com/DuncanMoyo/react-budget-calculator'
     },
   ],
+
+  portfolioIntro: 'Here\'s a list of projects that i have done for myself, excluding this website of course.'
 };
 
 export default portfolioData;
