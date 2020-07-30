@@ -6,7 +6,7 @@ import "../../css/style.css";
 
 const Contact = () => {
   
-  const { phoneNumber, address, getInTouch, email } = portfolioData;
+  const { phoneNumber, address, getInTouch, email, socialLinks } = portfolioData;
   return (
 
     <section
@@ -22,7 +22,7 @@ const Contact = () => {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="title-box-2">
-                      <h5 className="title-left">Send Message Us</h5>
+                      <h5 className="title-left">Send Me A Message</h5>
                     </div>
                     <div>
                       <ContactData />
@@ -48,36 +48,20 @@ const Contact = () => {
                         </li>
                       </ul>
                     </div>
+                    
                     <div className="socials">
                       <ul>
-                        <li>
-                          <a href="">
-                            <span className="ico-circle">
-                              <i className="ion-social-facebook"></i>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <span className="ico-circle">
-                              <i className="ion-social-instagram"></i>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <span className="ico-circle">
-                              <i className="ion-social-twitter"></i>
-                            </span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <span className="ico-circle">
-                              <i className="ion-social-pinterest"></i>
-                            </span>
-                          </a>
-                        </li>
+                        {socialLinks.map(link => {
+                          return (
+                            <li>
+                            <a href={link.url}>
+                              <span className="ico-circle">
+                                <i className={link.logo}></i>
+                              </span>
+                            </a>
+                          </li>
+                          )
+                        })}
                       </ul>
                     </div>
                   </div>

@@ -228,17 +228,17 @@ a:hover {
 }
 
 /*------/ Ul resect /------*/
-.ul-resect, .socials ul, .listIco, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
+.ul-resect, .socials ul, .list-ico, .blog-wrapper .post-meta ul, .box-comments .list-comments, .widget-sidebar .list-sidebar, .widget-tags ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
 }
 
-.listIco {
+.list-ico {
   line-height: 2;
-}
+} 
 
-.listIco span {
+.list-ico span {
   color: #0078ff;
   margin-right: 10px;
 }

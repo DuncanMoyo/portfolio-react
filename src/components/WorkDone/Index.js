@@ -44,7 +44,7 @@ const WorkDone = () => {
                         <div className="w-like">
                           <a href={Item.gitHubUrl}>
                             {" "}
-                            <span className="ion-ios-plus-outline"></span>
+                            <span className="fa fa-github"></span>
                           </a>
                         </div>
                       </div>
