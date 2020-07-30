@@ -1,11 +1,10 @@
 import React from 'react';
-import './App.css';  
-import About from './components/About/Index'
-import Navbar from './components/Navbar/Index';
-import Intro from './components/Intro/Index';
-import WorkDone from './components/WorkDone/Index';
-import Footer from './components/Footer/Index';
-import Contact from './components/Contact/Index';
+import About from './components/About'
+import Navbar from './components/Navbar';
+import Intro from './components/Intro';
+import WorkDone from './components/WorkDone';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   return (

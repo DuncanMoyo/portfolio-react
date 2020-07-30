@@ -44,16 +44,20 @@ const portfolioData = {
       skillLevel: 66
     },
   ],
-  portfolio: [
+  portfolioItems: [
     {
-      name: "project1",
-      description: "App",
-      image: "jpg file",
+      name: "Burger Builder",
+      AppLanguage: 'React',
+      image: "jpg file1",
     },
     {
-      name: "project2",
-      description: "App",
-      image: "jpg file",
+      name: "Porfolio Website",
+      description: "React",
+      image: "jpg file2",
+
+      name: "Budget Calculator",
+      description: "React",
+      image: "jpg file3",
     },
   ],
 };
