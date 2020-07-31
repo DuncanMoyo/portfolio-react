@@ -7,24 +7,28 @@ const portfolioData = {
   role: "Frontend Developer",
   email: "duncanfmoyo@gmail.com",
   address: "Goodwood, Cape Town",
-  getInTouch: "Hit me up, let's build something awesome together",
+  getInTouch: "You like what you see and wish you could have your own website? Hit me up, let's build something awesome together.",
   phoneNumber: "+27 67 073 7874",
   roleDescription:
     "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
   socialLinks: [
     {
+      name: 'github',
       url: "https://github.com/DuncanMoyo",
       logo: "fa fa-github",
     },
     {
+      name: 'facebook',
       url: "https://www.facebook.com/duncanfm",
       logo: "fa fa-facebook-official",
     },
     {
+      name: 'twitter',
       url: "https://twitter.com/duncanfm",
       logo: "fa fa-twitter",
     },
     {
+      name: 'instagram',
       url: "https://www.instagram.com/duncan_moyo92/",
       logo: "ion-social-instagram",
     },

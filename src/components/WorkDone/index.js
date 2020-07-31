@@ -21,7 +21,7 @@ const WorkDone = () => {
         <div className="row">
           {portfolioItems.map((Item) => {
             return (
-              <div className="col-md-4">
+              <div key={Item.name} className="col-md-4">
                 <div className="work-box">
                   <a
                     href={Item.gitHubUrl}

@@ -3,7 +3,7 @@ import classes from './ContactData.module.css';
 import Button from '../Button';
 import Input from '../Input';
 import Spinner from '../Spinner'
-import axios from 'axios';
+import axios from '../../axios-messages'
 
 class ContactData extends Component {
   state = {
@@ -61,10 +61,8 @@ class ContactData extends Component {
         formElementIdentifier
       ].value;
     }
-    // alert("Go ahead");
+
     const message = {
-      ingredients: this.props.ingredients,
-      price: this.props.price,
       messageData: formData,
     };
     axios
@@ -157,7 +155,6 @@ class ContactData extends Component {
     }
     return (
       <div className={classes.ContactData}>
-        <h4>Contact Me</h4>
         {form}
       </div>
     );

@@ -7,55 +7,55 @@ const About = () => {
   const { name, aboutMe, email, phoneNumber, skills, role } = portfolioData;
 
   return (
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
+    <section id="about" className="about-mf sect-pt4 route">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="box-shadow-full">
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-sm-6 col-md-5">
+                      <div className="about-img">
                         <img
                           src={profilePicture}
-                          class="img-fluid rounded b-shadow-a"
+                          className="img-fluid rounded b-shadow-a"
                           alt=""
                         />
                       </div>
                     </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
+                    <div className="col-sm-6 col-md-7">
+                      <div className="about-info">
                         <p>
-                          <span class="title-s">Name: </span>{" "}
+                          <span className="title-s">Name: </span>{" "}
                           <span>{name}</span>
                         </p>
                         <p>
-                          <span class="title-s">Profile: </span>{" "}
+                          <span className="title-s">Profile: </span>{" "}
                           <span>{role}</span>
                         </p>
                         <p>
-                          <span class="title-s">Email: </span>{" "}
+                          <span className="title-s">Email: </span>{" "}
                           <span>{email}</span>
                         </p>
                         <p>
-                          <span class="title-s">Phone: </span>{" "}
+                          <span className="title-s">Phone: </span>{" "}
                           <span>{phoneNumber}</span>
                         </p>
                       </div>
                     </div>
                   </div>
                   <hr />
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
+                  <div className="skill-mf">
+                    <p className="title-s">Skill</p>
                     {skills.map((skill) => {
                       return (
-                        <div>
+                        <div key={skill.skillName}>
                           <span>{skill.skillName}</span>{" "}
-                          <span class="pull-right">{skill.skillLevel}%</span>
-                          <div class="progress">
+                          <span className="pull-right">{skill.skillLevel}%</span>
+                          <div className="progress">
                             <div
-                              class="progress-bar"
+                              className="progress-bar"
                               role="progressbar"
                               style={{ width: `${skill.skillLevel}%` }}
                               aria-valuenow="85"
@@ -68,12 +68,12 @@ const About = () => {
                     })}
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">About me</h5>
+                <div className="col-md-6">
+                  <div className="about-me pt-4 pt-md-0">
+                    <div className="title-box-2">
+                      <h5 className="title-left">About me</h5>
                     </div>
-                    <p class="lead">{aboutMe}</p>
+                    <p className="lead">{aboutMe}</p>
                   </div>
                 </div>
               </div>

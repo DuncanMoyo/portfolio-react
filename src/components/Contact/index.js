@@ -53,7 +53,7 @@ const Contact = () => {
                       <ul>
                         {socialLinks.map(link => {
                           return (
-                            <li>
+                            <li key={link.name}>
                             <a href={link.url}>
                               <span className="ico-circle">
                                 <i className={link.logo}></i>
