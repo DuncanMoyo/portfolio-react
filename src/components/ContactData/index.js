@@ -35,9 +35,9 @@ class ContactData extends Component {
         touched: false,
       },
       message: {
-        elementType: "input",
+        elementType: "textarea",
         elementConfig: {
-          type: "textfield",
+          type: "textarea",
           placeholder: "Message",
         },
         value: "",
@@ -136,6 +136,7 @@ class ContactData extends Component {
       <form onSubmit={this.messageHandler}>
         {formElementsArray.map((formElement) => (
           <Input
+            className={classes.Input}
             key={formElement.id}
             elementType={formElement.config.elementType}
             elementConfig={formElement.config.elementConfig}

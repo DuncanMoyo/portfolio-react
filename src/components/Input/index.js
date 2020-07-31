@@ -13,7 +13,7 @@ const input = props => {
     case 'input':
       inputElement = (
         <input
-          className={inputClasses.join(' ')}
+          className={inputClasses.join(' '), classes.Input}
           {...props.elementConfig}
           value={props.value}
           onChange={props.changed} />
@@ -21,8 +21,9 @@ const input = props => {
       break
     case 'textarea':
       inputElement = (
-        <textarea   
-          className={inputClasses.join(' ')}
+        <textarea
+          rows='4'   
+          className={inputClasses.join(' '), classes.MessageInput}
           {...props.elementConfig}
           value={props.value}
           onChange={props.changed} />
