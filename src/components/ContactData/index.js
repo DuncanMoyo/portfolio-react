@@ -68,11 +68,11 @@ class ContactData extends Component {
     axios
       .post("/messages.json", message)
       .then((response) => {
-        this.setState({ loading: false });
-        this.props.history.push("/");
+        this.setState({ loading: false })
       })
       .catch((error) => {
         this.setState({ loading: false });
+      
       });
   };
 
@@ -145,7 +145,7 @@ class ContactData extends Component {
             changed={(event) => this.inputChangedHandler(event, formElement.id)}
           />
         ))}
-        <Button btnType="Success" disabled={!this.state.formIsValid}>
+        <Button btnType="Success" disabled={!this.state.formIsValid}  >
           SEND MESSAGE
         </Button>
       </form>
