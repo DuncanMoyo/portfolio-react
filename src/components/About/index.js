@@ -48,16 +48,16 @@ const About = () => {
                   <hr />
                   <div className="skill-mf">
                     <p className="title-s">Skill</p>
-                    {skills.map((skill) => {
+                    {skills.map(({skillLevel, skillName}) => {
                       return (
-                        <div key={skill.skillName}>
-                          <span>{skill.skillName}</span>{" "}
-                          <span className="pull-right">{skill.skillLevel}%</span>
+                        <div key={skillName}>
+                          <span>{skillName}</span>{" "}
+                          <span className="pull-right">{skillLevel}%</span>
                           <div className="progress">
                             <div
                               className="progress-bar"
                               role="progressbar"
-                              style={{ width: `${skill.skillLevel}%` }}
+                              style={{ width: `${skillLevel}%` }}
                               aria-valuenow="85"
                               aria-valuemin="0"
                               aria-valuemax="100"

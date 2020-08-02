@@ -19,30 +19,30 @@ const WorkDone = () => {
           </div>
         </div>
         <div className="row">
-          {portfolioItems.map((Item) => {
+          {portfolioItems.map(({name, gitHubUrl, image,description}) => {
             return (
-              <div key={Item.name} className="col-md-4">
+              <div key={name} className="col-md-4">
                 <div className="work-box">
                   <a
-                    href={Item.gitHubUrl}
+                    href={gitHubUrl}
                     data-gall="portfolioGallery"
                     className="venobox"
                   >
                     <div className="work-img">
-                      <img src={Item.image} alt="" className="img-fluid" />
+                      <img src={image} alt="" className="img-fluid" />
                     </div>
                   </a>
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">{Item.name}</h2>
+                        <h2 className="w-title">{name}</h2>
                         <div className="w-more">
-                          <span className="w-ctegory">{Item.description}</span>{" "}
+                          <span className="w-ctegory">{description}</span>{" "}
                         </div>
                       </div>
                       <div className="col-sm-4">
                         <div className="w-like">
-                          <a href={Item.gitHubUrl}>
+                          <a href={gitHubUrl}>
                             {" "}
                             <span className="fa fa-github"></span>
                           </a>

@@ -5,10 +5,14 @@ import portfolioData from "../PortfolioData";
 import "../../css/style.css";
 
 const Contact = () => {
-  
-  const { phoneNumber, address, getInTouch, email, socialLinks } = portfolioData;
+  const {
+    phoneNumber,
+    address,
+    getInTouch,
+    email,
+    socialLinks,
+  } = portfolioData;
   return (
-
     <section
       className="paralax-mf footer-paralax bg-image sect-mt4 route"
       style={{ backgroundImage: `url(${footerImage})` }}
@@ -40,7 +44,8 @@ const Contact = () => {
                           {address}
                         </li>
                         <li>
-                          <span className="ion-ios-telephone"></span> {phoneNumber}
+                          <span className="ion-ios-telephone"></span>{" "}
+                          {phoneNumber}
                         </li>
                         <li>
                           <span className="ion-email"></span>
@@ -48,19 +53,19 @@ const Contact = () => {
                         </li>
                       </ul>
                     </div>
-                    
+
                     <div className="socials">
                       <ul>
-                        {socialLinks.map(link => {
+                        {socialLinks.map(({name, url, logo}) => {
                           return (
-                            <li key={link.name}>
-                            <a href={link.url}>
-                              <span className="ico-circle">
-                                <i className={link.logo}></i>
-                              </span>
-                            </a>
-                          </li>
-                          )
+                            <li key={name}>
+                              <a href={url}>
+                                <span className="ico-circle">
+                                  <i className={logo}></i>
+                                </span>
+                              </a>
+                            </li>
+                          );
                         })}
                       </ul>
                     </div>
