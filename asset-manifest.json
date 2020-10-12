@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/http//:DuncanMoyo.github.io/portfolio-react/static/css/main.2097d407.chunk.css",
-    "main.js": "/http//:DuncanMoyo.github.io/portfolio-react/static/js/main.44b9425c.chunk.js",
-    "main.js.map": "/http//:DuncanMoyo.github.io/portfolio-react/static/js/main.44b9425c.chunk.js.map",
-    "runtime-main.js": "/http//:DuncanMoyo.github.io/portfolio-react/static/js/runtime-main.44975eba.js",
-    "runtime-main.js.map": "/http//:DuncanMoyo.github.io/portfolio-react/static/js/runtime-main.44975eba.js.map",
-    "static/js/2.c460eb68.chunk.js": "/http//:DuncanMoyo.github.io/portfolio-react/static/js/2.c460eb68.chunk.js",
-    "static/js/2.c460eb68.chunk.js.map": "/http//:DuncanMoyo.github.io/portfolio-react/static/js/2.c460eb68.chunk.js.map",
-    "index.html": "/http//:DuncanMoyo.github.io/portfolio-react/index.html",
-    "precache-manifest.192cdea371ff10a0d83a1924a91b568f.js": "/http//:DuncanMoyo.github.io/portfolio-react/precache-manifest.192cdea371ff10a0d83a1924a91b568f.js",
-    "service-worker.js": "/http//:DuncanMoyo.github.io/portfolio-react/service-worker.js",
-    "static/css/main.2097d407.chunk.css.map": "/http//:DuncanMoyo.github.io/portfolio-react/static/css/main.2097d407.chunk.css.map",
-    "static/js/2.c460eb68.chunk.js.LICENSE.txt": "/http//:DuncanMoyo.github.io/portfolio-react/static/js/2.c460eb68.chunk.js.LICENSE.txt",
-    "static/media/budget-project.jpg": "/http//:DuncanMoyo.github.io/portfolio-react/static/media/budget-project.8c0d54ee.jpg",
-    "static/media/burger-project.jpg": "/http//:DuncanMoyo.github.io/portfolio-react/static/media/burger-project.2e1f009f.jpg",
-    "static/media/obaju-project.jpg": "/http//:DuncanMoyo.github.io/portfolio-react/static/media/obaju-project.7311356c.jpg",
-    "static/media/overlay-bg.jpg": "/http//:DuncanMoyo.github.io/portfolio-react/static/media/overlay-bg.f1fbf21f.jpg",
-    "static/media/profile.jpg": "/http//:DuncanMoyo.github.io/portfolio-react/static/media/profile.45038293.jpg",
-    "static/media/table.jpg": "/http//:DuncanMoyo.github.io/portfolio-react/static/media/table.0bcf8dee.jpg"
+    "main.css": "/portfolio-react/static/css/main.2097d407.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.370a9602.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.370a9602.chunk.js.map",
+    "runtime-main.js": "/portfolio-react/static/js/runtime-main.d51ec724.js",
+    "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.d51ec724.js.map",
+    "static/js/2.c460eb68.chunk.js": "/portfolio-react/static/js/2.c460eb68.chunk.js",
+    "static/js/2.c460eb68.chunk.js.map": "/portfolio-react/static/js/2.c460eb68.chunk.js.map",
+    "index.html": "/portfolio-react/index.html",
+    "precache-manifest.736ffdae1d841e845c1991eb80dbae2c.js": "/portfolio-react/precache-manifest.736ffdae1d841e845c1991eb80dbae2c.js",
+    "service-worker.js": "/portfolio-react/service-worker.js",
+    "static/css/main.2097d407.chunk.css.map": "/portfolio-react/static/css/main.2097d407.chunk.css.map",
+    "static/js/2.c460eb68.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.c460eb68.chunk.js.LICENSE.txt",
+    "static/media/budget-project.jpg": "/portfolio-react/static/media/budget-project.8c0d54ee.jpg",
+    "static/media/burger-project.jpg": "/portfolio-react/static/media/burger-project.2e1f009f.jpg",
+    "static/media/obaju-project.jpg": "/portfolio-react/static/media/obaju-project.7311356c.jpg",
+    "static/media/overlay-bg.jpg": "/portfolio-react/static/media/overlay-bg.f1fbf21f.jpg",
+    "static/media/profile.jpg": "/portfolio-react/static/media/profile.45038293.jpg",
+    "static/media/table.jpg": "/portfolio-react/static/media/table.0bcf8dee.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.44975eba.js",
+    "static/js/runtime-main.d51ec724.js",
     "static/js/2.c460eb68.chunk.js",
     "static/css/main.2097d407.chunk.css",
-    "static/js/main.44b9425c.chunk.js"
+    "static/js/main.370a9602.chunk.js"
   ]
 }
